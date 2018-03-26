@@ -1,0 +1,3 @@
+class Beanbox::CLI
+  
+end
