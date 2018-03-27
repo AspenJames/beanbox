@@ -2,6 +2,8 @@ PATH
   remote: .
   specs:
     beanbox (0.1.0)
+      nokogiri
+      require_all
 
 GEM
   remote: https://rubygems.org/
@@ -15,6 +17,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     rake (10.4.2)
+    require_all (2.0.0)
 
 PLATFORMS
   ruby
@@ -22,7 +25,6 @@ PLATFORMS
 DEPENDENCIES
   beanbox!
   bundler (~> 1.16)
-  nokogiri
   pry
   rake (~> 10.0)
 
