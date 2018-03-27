@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Shows Bean Box's top selling coffees"
   spec.description   =
-  spec.homepage      = "github.com/aspenjames"
+  spec.homepage      = "https://github.com/AspenJames/beanbox"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -32,4 +32,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "pry"
+  spec.add_runtime_dependency "nokogiri" "~> 1.8"
+
 end
