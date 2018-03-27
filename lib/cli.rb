@@ -3,11 +3,16 @@ class Beanbox::CLI
   def initialize
     Beanbox::Coffee.reset!
   end
+
   def run
-    self.welcome_message
-    Beanbox::Scraper.new("https://beanbox.co/coffee")
-    self.list_coffees
-    # self.list_menu #Update later to expand functionality
+    input = nil
+    until input == "exit!"
+      self.welcome_message
+      Beanbox::Scraper.new("https://beanbox.co/coffee").scrape
+      self.list_coffees
+      # self.list_menu #Update later to expand functionality
+      input = "exit!" # exits loop - remove when list_menu is defined
+    end
   end
 
   def welcome_message

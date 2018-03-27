@@ -1,7 +1,6 @@
 require 'nokogiri'
 require 'open-uri'
-# require 'pry'
-# require_relative "coffee"
+
 class Beanbox::Scraper
   attr_accessor :URL_path, :doc, :results
 
@@ -12,20 +11,15 @@ class Beanbox::Scraper
 
   def scrape
     @doc = Nokogiri::HTML(open(@URL_path))
-    #coffees: @doc.css("div.roast-list")
-    #name: coffee.css("h2").text
-    #roaster: coffee.css("h3.roast-item-roaster a").text
-    #price: coffee.css("h4.roast-item-price").text.split("\n")[1]
-    @doc.css("div.roast-list").each do |element|
+    @doc.css("div.twelve.columns.center.pad-top").first.css("div.roast-list").each do |element|
       coffee = Beanbox::Coffee.new
       coffee.name = element.css("h2").text
+      # This next line normalizes the name, which is returned in all caps
+      coffee.name = coffee.name.split(" ").collect{|n| n.capitalize}.join(" ")
       coffee.roaster = element.css("h3.roast-item-roaster a").text
       coffee.price = element.css("h4.roast-item-price").text.split("\n")[1]
-      self.results << coffee
+      self.results << coffee # add each coffee to @results
     end
-    # binding.pry
     self.results
   end
 end
-
-# Beanbox::Scraper.new("https://beanbox.co/coffee").scrape
