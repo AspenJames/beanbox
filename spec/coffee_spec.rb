@@ -1,5 +1,6 @@
 require "spec_helper.rb"
-require "coffee.rb"
+require "coffee"
+
 describe Beanbox::Coffee do
 
   before do

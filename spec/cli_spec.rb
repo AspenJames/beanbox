@@ -1,5 +1,7 @@
 require "spec_helper"
 require "cli"
+require "coffee"
+require "scraper"
 
 describe Beanbox::CLI do
   before do
