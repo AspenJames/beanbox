@@ -30,8 +30,9 @@ class Beanbox::CLI
     puts "#{coffee.description}"
     puts
     puts 'Enter "list" to return the menu or "exit!"'
-    input = gets.chomp
+    input = nil
     until input == "exit!"
+      input = gets.chomp
       if input == "list"
         self.list_coffees
         self.list_menu
