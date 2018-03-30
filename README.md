@@ -18,9 +18,11 @@ Or install it yourself as:
 
     $ gem install beanbox
 
+This gem depends on Ruby version 2.3.3. You may need to install [rvm](https://rvm.io) if you have a different version of Ruby installed. Run `rvm install 2.3.3` and `rvm use 2.3.3`, then `bundle install` again.
+
 ## Usage
 
-Simply run the command `beanbox` in your terminal to see a list of the top four best selling coffees on Beanbox.co as well as their price. Type in a coffee's list number and press enter to see more detailed information about that specific coffee. 
+Simply run the command `beanbox` in your terminal to see a list of the top four best selling coffees on Beanbox.co as well as their price. Type in a coffee's list number and press enter to see more detailed information about that specific coffee.
 
 ## Development
 
