@@ -1,8 +1,6 @@
 # Beanbox
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/beanbox`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome! This gem provides information on Seattle's top selling coffees on Beanbox.co via a simple and easy-to-use command-line interface.
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Simply run the command `beanbox` in your terminal to see a list of the top four best selling coffees on Beanbox.co as well as their price. Type in a coffee's list number and press enter to see more detailed information about that specific coffee. 
 
 ## Development
 
