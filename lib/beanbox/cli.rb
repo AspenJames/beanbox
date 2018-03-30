@@ -40,7 +40,8 @@ class Beanbox::CLI
       elsif input == "exit!"
         exit
       else
-        puts "I didn't quite get that"
+        puts "I didn't quite get that..."
+        self.list_menu
       end
     end
   end
@@ -65,7 +66,7 @@ class Beanbox::CLI
       when "exit!"
         exit
       else
-        puts "I didn't quite get that"
+        puts "I didn't quite get that..."
         self.list_menu
       end
     end
