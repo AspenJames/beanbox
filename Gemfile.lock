@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    beanbox (0.1.1)
-      nokogiri
+    beanbox (0.1.2)
+      nokogiri (~> 1.8)
 
 GEM
   remote: https://rubygems.org/
@@ -23,7 +23,7 @@ PLATFORMS
 DEPENDENCIES
   beanbox!
   bundler (~> 1.16)
-  pry
+  pry (~> 0.11)
   rake (~> 10.0)
 
 BUNDLED WITH
