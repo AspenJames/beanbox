@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["aspenjames@tqca.org"]
 
   spec.summary       = "Shows Bean Box's top selling coffees"
-  spec.description   =
+  spec.description   = "Lists Seattle's top selling coffees on beanbox.co with the option to view further information via a command-line interface."
   spec.homepage      = "https://github.com/AspenJames/beanbox"
   spec.license       = "MIT"
 
@@ -34,6 +34,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "pry"
   spec.add_runtime_dependency "nokogiri"
-  spec.add_runtime_dependency "require_all"
 
 end
