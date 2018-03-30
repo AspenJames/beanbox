@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    beanbox (0.1.0)
+    beanbox (0.1.1)
       nokogiri
 
 GEM
