@@ -6,7 +6,7 @@ class Beanbox::CLI
   end
 
   def run
-    Beanbox::Scraper.new("https://beanbox.co/coffee").scrape
+    Beanbox::Scraper.new("https://beanbox.co/coffee/best-sellers").scrape
     self.list_coffees
     self.list_menu
   end
